@@ -34,4 +34,4 @@ module.exports.run = async ({ api, event, args }) => {
 		console.error("An error occurred:", error);
 		api.sendMessage("Oops! Something went wrong.", event.threadID, event.messageID);
 	}
-};
+}; 
