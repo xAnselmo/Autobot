@@ -19,7 +19,7 @@ module.exports.run = async ({ api, event, args }) => {
 			return api.sendMessage(`Please put Message`, event.threadID, event.messageID);
 		}
 
-		const typingStatus = await api.sendMessage("🔎 Searching for your query...", event.threadID);
+		const typingStatus = await api.sendMessage("𝗣𝗨𝗧𝗔𝗡𝗚 𝗜𝗡𝗔 𝗡𝗚 𝗔𝗟𝗔𝗚𝗔 𝗠𝗢𝗡𝗚 𝗔𝗦𝗢🖕😊", event.threadID);
 		
 		const response = await axios.get(`http://fi1.bot-hosting.net:6378/sim?query=${message}`);
 		const respond = response.data.respond;
